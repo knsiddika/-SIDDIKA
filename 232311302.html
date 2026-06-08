@@ -1,0 +1,321 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdur Razzak | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #f5f7fa;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0b1b3a, #112a55);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        header img {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            border: 5px solid white;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: white;
+            color: #0d47a1;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+
+        nav {
+            background: #111827;
+            text-align: center;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 70px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #0d47a1;
+            font-size: 2rem;
+        }
+
+        .about {
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-name {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .bar {
+            background: #ddd;
+            height: 10px;
+            border-radius: 10px;
+        }
+
+        .progress {
+            height: 10px;
+            border-radius: 10px;
+            background: #1976d2;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .project {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+        }
+
+        .education,
+        .contact {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact p {
+            margin: 10px 0;
+        }
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="WhatsApp Image 2026-06-07 at 10.03.00 PM.jpeg" alt="Profile Picture">
+        <h1>Kamrun Nahar Siddika</h1>
+        <p>Computer Science & Engineering Student</p>
+        <a href="#contact" class="btn">Contact Me</a>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about">
+            Hello! I am kamrun Nahar Siddika, a passionate Computer Science and Engineering student.
+            I am interested in Web Development, Machine Learning, Programming, Database Systems,
+            and Software Engineering. I enjoy solving real-world problems through technology.
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Technical Skills</h2>
+
+        <div class="skills">
+
+            <div class="skill-box">
+                <div class="skill-name">HTML</div>
+                <div class="bar">
+                    <div class="progress" style="width:90%"></div>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-name">CSS</div>
+                <div class="bar">
+                    <div class="progress" style="width:85%"></div>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-name">JavaScript</div>
+                <div class="bar">
+                    <div class="progress" style="width:75%"></div>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-name">Python</div>
+                <div class="bar">
+                    <div class="progress" style="width:80%"></div>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-name">MySQL</div>
+                <div class="bar">
+                    <div class="progress" style="width:75%"></div>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-name">Assembly Language</div>
+                <div class="bar">
+                    <div class="progress" style="width:70%"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="education">
+        <h2 class="section-title">Education</h2>
+
+        <div class="education">
+            <h3>B.Sc. in Computer Science & Engineering</h3>
+            <p>in varendra university</p>
+            <p>Current Undergraduate Student</p>
+
+
+        </div>
+    </section>
+    <section id="education">
+        <h2 class="section-title">Subject</h2>
+
+        <div class="education">
+
+            <ul>
+                <li>Data Structures & Algorithms</li>
+                <li>Database Management Systems</li>
+                <li>Microprocessor & Assembly Language</li>
+                <li>Numerical Methods</li>
+                <li>Web Development etc.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects">
+
+            <div class="project">
+                <h3>Electricity Bill Estimation System</h3>
+                <p>
+                    Developed a JavaScript-based web application that predicts
+                    electricity bills for future years and displays results dynamically.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Beam Design Using Bisection Method</h3>
+                <p>
+                    Applied numerical analysis techniques to solve a real-life
+                    structural engineering problem using the Bisection Method.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>8086 Assembly Language Programs</h3>
+                <p>
+                    Implemented character input/output, arithmetic operations,
+                    looping structures and odd-even checking programs.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Personal Portfolio Website</h3>
+                <p>
+                    Designed and developed a responsive portfolio website using
+                    HTML and CSS.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact">
+            <p><strong>Email:</strong> kamrunnaharsiddika1@gmail.com</p>
+            <p><strong>Location:</strong> Bangladesh</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 kamrun Nahar Siddika | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
+```
